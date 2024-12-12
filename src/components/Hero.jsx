@@ -32,9 +32,9 @@ const Hero = () => {
   return (
     <>
       <div className="">
-        <div className="relative bg-white pt-20  p-5 w-full h-full">
-          <h1 className="absolute top-5 left-44 dm:left-5 text-cyan-600 text-4xl font-bold">
-            DIZTOVERSITY
+        <div className="relative bg-white pt-24  p-5 w-full h-full">
+          <h1 className="absolute top-2 left-14 dm:left-5 text-cyan-600 text-4xl font-bold">
+            <img src='https://i.ibb.co/vvCkVLF/education.png' className='w-16 ml-16 ' />
           </h1>
           <img
             src="https://i.ibb.co/c8JGRGB/bannaer.jpg" // Replace with your image URL
@@ -117,7 +117,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ScrollTrigger
+      {/* <ScrollTrigger
         onEnter={() => setCounterOn(true)}
         onExit={() => setCounterOn(false)}
       >
@@ -144,7 +144,7 @@ const Hero = () => {
             ))}
           </div>
         </div>
-      </ScrollTrigger>
+      </ScrollTrigger> */}
     </>
   );
 };

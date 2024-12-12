@@ -2,3 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Transition for FAQ content */
+.faq-enter {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .faq-enter-active {
+    max-height: 200px; /* Adjust this value as needed */
+    opacity: 1;
+  }
+  .faq-exit {
+    max-height: 200px; /* Adjust this value as needed */
+    opacity: 1;
+  }
+  .faq-exit-active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in, opacity 0.3s ease-in;
+  }
+  
+  /* Styles for the Navbar */
+  .navbar {
+    overflow-x: auto;
+  }
+  
+  /* Styles for active tab */
+  .active-tab {
+    border-bottom: 2px solid black;
+  }
+  
+  /* Styles for FAQ section */
+  .faq-item {
+    background-color: #f0f8ff; /* Change color as needed */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    color: #1e90ff; /* Change color as needed */
+  }
+  
+  .faq-answer {
+    padding-top: 8px;
+  }
+  
