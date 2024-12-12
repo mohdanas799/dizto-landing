@@ -1,58 +1,3 @@
-// import React from 'react';
-
-// const awards = [
-//   { year: 2023, title: 'Leading Preschool in India', by: 'BW Education' },
-//   { year: 2018, title: 'Best Preschool', by: 'Silicon India' },
-//   { year: 2023, title: 'Innovation for Curriculum', by: 'BW Education' },
-//   { year: 2017, title: 'Best Preschool by Brainfeed', by: 'School Excellence Awards' },
-// ];
-
-// const team = [
-//   { name: 'Raj Singhal', position: 'CEO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-//   { name: 'Purvesh Sharma', position: 'COO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-//   { name: 'Ashish Aggarwal', position: 'CO-Founder, M.Tech-IITD, MBA-IIM-C', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-//   { name: 'Amita Bhardwaj', position: 'Chief Delivery Officer', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-// ];
-
-// const Awards = () => {
-//   return (
-//     <div className="bg-gray-100 p-8">
-//       <div className="text-center">
-//         <h2 className="text-6xl dm:text-3xl font-bold mb-8">Awards</h2>
-//         <div className="flex flex-wrap justify-center space-x-4 space-y-4">
-//           {awards.map((award, index) => (
-//             <div key={index} className="bg-white shadow-lg rounded-lg p-4 w-60">
-//               <div className="text-yellow-500 text-4xl mb-2">🏆</div>
-//               <h3 className="text-xl font-bold">{award.year}</h3>
-//               <p className="text-gray-700">{award.title}</p>
-//               <p className="text-gray-500 text-sm">{award.by}</p>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-      
-//       <div className="text-center mt-16">
-//         <h2 className="text-6xl dm:text-3xl font-bold mb-8">Our <span className="text-blue-400">Team</span></h2>
-//         <p className="text-gray-600 mb-12">Our Qualified Professionals Who are pointing the children towards a brighter future.</p>
-//         <div className="flex flex-wrap justify-center space-x-4 space-y-4">
-//           {team.map((member, index) => (
-//             <div key={index} className="bg-white shadow-lg rounded-lg p-4 w-60">
-//               <img src={member.image} alt={member.name} className="w-full h-40 object-cover rounded-t-lg" />
-//               <div className="text-center mt-4">
-//                 <h3 className="text-xl font-bold">{member.name}</h3>
-//                 <p className="text-gray-700">{member.position}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Awards;
-
-
 import React from 'react';
 
 const awards = [
@@ -62,12 +7,12 @@ const awards = [
   { year: 2017, title: 'Best Preschool by Brainfeed', by: 'School Excellence Awards' },
 ];
 
-const team = [
-  { name: 'Raj Singhal', position: 'CEO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-  { name: 'Purvesh Sharma', position: 'COO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-  { name: 'Ashish Aggarwal', position: 'CO-Founder, M.Tech-IITD, MBA-IIM-C', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-  { name: 'Amita Bhardwaj', position: 'Chief Delivery Officer', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
-];
+// const team = [
+//   { name: 'Raj Singhal', position: 'CEO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
+//   { name: 'Purvesh Sharma', position: 'COO, B.Tech - IIT-Delhi', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
+//   { name: 'Ashish Aggarwal', position: 'CO-Founder, M.Tech-IITD, MBA-IIM-C', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
+//   { name: 'Amita Bhardwaj', position: 'Chief Delivery Officer', image: 'https://www.footprintseducation.in/assets/images/team-img/Purvesh-Sharma.webp' },
+// ];
 
 const Awards = () => {
   return (
@@ -88,7 +33,7 @@ const Awards = () => {
       </div>
       
       {/* Team Section */}
-      <div className="text-center">
+      {/* <div className="text-center">
         <h2 className="text-6xl dm:text-3xl font-bold mb-8">Our <span className="text-blue-400">Team</span></h2>
         <p className="text-gray-600 mb-12">Our Qualified Professionals Who are pointing the children towards a brighter future.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 w-[85%] dm:w-[100%] mx-auto gap-8">
@@ -102,7 +47,7 @@ const Awards = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

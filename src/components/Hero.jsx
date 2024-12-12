@@ -37,7 +37,7 @@ const Hero = () => {
             DIZTOVERSITY
           </h1>
           <img
-            src="https://via.placeholder.com/400x250?" // Replace with your image URL
+            src="https://i.ibb.co/c8JGRGB/bannaer.jpg" // Replace with your image URL
             alt="Preschool Background"
             className="w-full h-screen dm:h-44 rounded-xl"
           />

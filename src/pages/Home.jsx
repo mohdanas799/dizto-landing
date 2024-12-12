@@ -4,6 +4,7 @@ import FranchiseBenefits from "../components/FranchiseBenefits";
 import MediaCoverage from "../components/MediaCoverage";
 import Awards from "../components/Awards";
 import Contact from "../components/Contact";
+import StudentGallery from "../components/StudentGallery";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <FranchiseBenefits/>
       <MediaCoverage/>
       <Awards/>
+      <StudentGallery/>
       <Contact/>
     </div>
   );
