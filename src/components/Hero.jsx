@@ -51,55 +51,55 @@ const Hero = () => {
           />
         </div>
         <div className=" relative w-[32%] dm:w-full bg-white rounded-3xl ml-[56rem] dm:ml-0 dm:mt-0 mt-[-39rem] p-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl font-sanss font-bold text-gray-800 mb-4">
             Enter Your Details
           </h2>
 
           {/* Form */}
-          <form className="space-y-4">
+          <form className="space-y-4 font-sans">
             <div>
-              <label htmlFor="fullName" className="block text-gray-600 mb-1">
+              <label htmlFor="fullName" className="block font-sans text-gray-600 mb-1">
                 Full Name *
               </label>
               <input
                 type="text"
                 id="fullName"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full p-3 border border-gray-300 font-sans rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
                 placeholder="Enter your full name"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-gray-600 mb-1">
+              <label htmlFor="email" className="block font-sans text-gray-600 mb-1">
                 Email *
               </label>
               <input
                 type="email"
                 id="email"
-                className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                className="w-full p-3 border border-gray-300 font-sans rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
                 placeholder="Enter your email"
               />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="phone" className="block text-gray-600 mb-1">
+                <label htmlFor="phone" className="block font-sans text-gray-600 mb-1">
                   Phone Number *
                 </label>
                 <input
                   type="text"
                   id="phone"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                  className="w-full p-3 border border-gray-300 font-sans rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
                   placeholder="Enter your phone number"
                 />
               </div>
               <div>
-                <label htmlFor="city" className="block text-gray-600 mb-1">
+                <label htmlFor="city" className="block font-sans text-gray-600 mb-1">
                   Select an option *
                 </label>
                 <select
                   id="options"
                   value={selectedValue}
                   onChange={handleChange}
-                  className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-500 text-base"
+                  className="border border-gray-300 rounded-md font-sans p-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-500 text-base"
                 >
                   <option value="" disabled>
                     Choose an option

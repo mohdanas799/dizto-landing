@@ -73,7 +73,7 @@ const StudentGallery = () => {
   return (
     <div className="w-full container mx-auto p-4 px-4 md:px-20">
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-6xl dm:text-3xl font-bold mb-8">
+        <h2 className="text-6xl font-sanss dm:text-3xl font-bold mb-8">
           Student <span className="text-blue-400">Life</span>
         </h2>
         <div className="flex gap-4">

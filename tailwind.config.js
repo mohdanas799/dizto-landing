@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ["Roboto"],
+        'sanss': ["Montserrat"]
+      },
       screens: {
         xxl: { max: "1535px" },
         // => @media (max-width: 1535px) { ... }

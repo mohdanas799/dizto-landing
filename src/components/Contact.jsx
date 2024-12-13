@@ -16,7 +16,7 @@ const Contact = () => {
           <div className="relative flex items-center justify-between p-8">
             <div className="absolute left-0 top-0 h-80 w-1/4 bg-yellow-200 rounded-r-full"></div>
             <div className="absolute right-0 top-0 h-80 w-1/4 bg-blue-200 dm:mt-44 rounded-l-full"></div>
-            <h2 className="relative text-2xl font-bold text-center w-full">
+            <h2 className="relative font-sanss text-4xl dm:text-2xl font-bold text-center w-full">
               Get In Touch
             </h2>
           </div>
@@ -54,7 +54,7 @@ const Contact = () => {
             <div className="flex z-50 justify-center">
               <button
                 type="submit"
-                className="px-4 py-2 z-50 bg-blue-600 text-white font-bold rounded-lg"
+                className="px-4 py-2 z-50 font-sanss bg-blue-600 text-white font-bold rounded-lg"
               >
                 Submit
               </button>
@@ -86,17 +86,16 @@ const Contact = () => {
             <div className="md:w-2/3 -mr-[80rem] dm:mr-0 dm:pt-[-70px] w-full p-6">
               <div className="space-y-2">
                 <p className="flex py-1 items-center">
-                  <span className="font-bold mr-4">Add: </span> 2nd Floor, B1/638A,
-                  Janakpuri, New Delhi, Delhi 110058
+                  <span className="font-bold mr-4">Add: </span> Noida 201010
                 </p>
                 <p className="flex py-1 items-center">
                   <FaPhoneAlt color="#1d4ed8" />
-                  <span className="font-bold ml-4">Call:</span> +91 8799726836
+                  <span className="font-bold ml-4">Call:</span> +91 8188988301
                 </p>
                 <p className="flex py-1 items-center">
                   <MdEmail color="#1d4ed8" />
                   <span className="font-bold ml-4">Email:</span>{" "}
-                  admission@collegeshuru.in
+                  diztoversity@gmail.com
                 </p>
               </div>
               <div className="dm:flex md:flex space-x-4 mt-3 items-center text-sm gap-2 mr-5">
@@ -120,8 +119,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-    
 
       <p className="text-center py-3">
         Copyright 2024 Diztoversity | All Rights Reserved
