@@ -252,7 +252,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto bg-gray-100 pt-44 dm:pt-20 p-4">
+    <div className="max-w-6xl mx-auto bg-gray-100 pt-60 dm:pt-20 p-4">
       <div className="flex space-x-4 border-b-2 overflow-x-auto">
         <button
           className={`py-2 px-4 font-semibold ${

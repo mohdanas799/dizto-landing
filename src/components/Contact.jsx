@@ -63,43 +63,48 @@ const Contact = () => {
         </div>
       </div>
 
-      <section className="bg-gradient-to-r mx-auto from-blue-500 to-green-500 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center md:items-start mx-32 dm:mx-0  bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden">
-            <div className=" w-40 p-6">
+      <section className="mx-auto">
+        <div className="container mx-auto ">
+          <div className="flex flex-col dm:flex-col md:flex-row items-center md:items-start mx-auto dm:mx-0  bg-gray-100 text-gray-900 shadow-lg overflow-hidden">
+            <div className=" w-[50%] dm:w-full dm:flex-col flex ml-20 dm:ml-0 p-6">
               <img
                 src="https://i.ibb.co/vvCkVLF/education.png"
                 alt="College Shuru"
-                className="w-44 h-auto "
+                className="w-32 h-auto "
               />
+              <div className="border-l-2 dm:hidden border-gray-900 h-32 mt-5 ml-6"></div>
+
+              <div className="mt-5">
+                {/* <h3 className="text-3xl font-bold mb-4 text-blue-700">NMIMS</h3> */}
+                <p className="mb-4 ml-10 dm:ml-0 text-lg leading-relaxed">
+                  College Shuru was established in the year of 2012 and is the
+                  perfect platform for students as it helps them to find the
+                  courses they are looking for.
+                </p>
+              </div>
             </div>
-            <div className="md:w-2/3 w-full p-6">
-              <h3 className="text-3xl font-bold mb-4 text-blue-700">NMIMS</h3>
-              <p className="mb-4 text-lg leading-relaxed">
-                College Shuru was established in the year of 2012 and is the
-                perfect platform for students as it helps them to find the
-                courses they are looking for.
-              </p>
+            <div className="md:w-2/3 -mr-[80rem] dm:mr-0 dm:pt-[-70px] w-full p-6">
               <div className="space-y-2">
-                <p className="flex items-center">
-                  <span className="font-bold">Add:</span> 2nd Floor, B1/638A,
+                <p className="flex py-1 items-center">
+                  <span className="font-bold mr-4">Add: </span> 2nd Floor, B1/638A,
                   Janakpuri, New Delhi, Delhi 110058
                 </p>
-                <p className="flex items-center">
+                <p className="flex py-1 items-center">
                   <FaPhoneAlt color="#1d4ed8" />
                   <span className="font-bold ml-4">Call:</span> +91 8799726836
                 </p>
-                <p className="flex items-center">
+                <p className="flex py-1 items-center">
                   <MdEmail color="#1d4ed8" />
                   <span className="font-bold ml-4">Email:</span>{" "}
                   admission@collegeshuru.in
                 </p>
               </div>
-              <div className="hidden md:flex space-x-4 mt-3 items-center text-sm gap-2 mr-5">
+              <div className="dm:flex md:flex space-x-4 mt-3 items-center text-sm gap-2 mr-5">
                 <a href="#" className="text-black">
                   <FaFacebookF color="#1d4ed8" size={18} />
                 </a>
-                <a href="https://www.instagram.com/diztoversity?igsh=MTB5amx5NjhwdXc0bQ=="
+                <a
+                  href="https://www.instagram.com/diztoversity?igsh=MTB5amx5NjhwdXc0bQ=="
                   className="text-black"
                 >
                   <FaInstagram color="#1d4ed8" size={23} />
@@ -116,9 +121,11 @@ const Contact = () => {
         </div>
       </section>
 
-        <p className="text-center py-3">
-          Copyright 2024 Diztoversity | Developed By ♥️ . All Rights Reserved
-        </p>
+    
+
+      <p className="text-center py-3">
+        Copyright 2024 Diztoversity | All Rights Reserved
+      </p>
     </>
   );
 };

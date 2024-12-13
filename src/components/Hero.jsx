@@ -29,12 +29,20 @@ const Hero = () => {
     },
   ];
 
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
   return (
     <>
       <div className="">
         <div className="relative bg-white pt-24  p-5 w-full h-full">
           <h1 className="absolute top-2 left-14 dm:left-5 text-cyan-600 text-4xl font-bold">
-            <img src='https://i.ibb.co/vvCkVLF/education.png' className='w-16 ml-16 ' />
+            <img
+              src="https://i.ibb.co/vvCkVLF/education.png"
+              className="w-16 ml-16 dm:ml-2"
+            />
           </h1>
           <img
             src="https://i.ibb.co/c8JGRGB/bannaer.jpg" // Replace with your image URL
@@ -44,20 +52,8 @@ const Hero = () => {
         </div>
         <div className=" relative w-[32%] dm:w-full bg-white rounded-3xl ml-[56rem] dm:ml-0 dm:mt-0 mt-[-39rem] p-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Start Your Own Pre School Franchise
+            Enter Your Details
           </h2>
-          <div className="flex items-center mb-4">
-            <p className="text-xl font-bold text-gray-700 mr-2">4.7</p>
-            <div className="flex">
-              <span className="text-orange-400">⭐</span>
-              <span className="text-orange-400">⭐</span>
-              <span className="text-orange-400">⭐</span>
-              <span className="text-orange-400">⭐</span>
-              <span className="text-gray-400">⭐</span>
-            </div>
-            <p className="text-sm text-gray-500 ml-2">(8787 Reviews)</p>
-          </div>
-          <p className="text-gray-600 mb-6">By IIT-IIM Alumni</p>
 
           {/* Form */}
           <form className="space-y-4">
@@ -97,21 +93,35 @@ const Hero = () => {
               </div>
               <div>
                 <label htmlFor="city" className="block text-gray-600 mb-1">
-                  City *
+                  Select an option *
                 </label>
-                <input
-                  type="text"
-                  id="city"
-                  className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                  placeholder="Enter your city"
-                />
+                <select
+                  id="options"
+                  value={selectedValue}
+                  onChange={handleChange}
+                  className="border border-gray-300 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-500 text-base"
+                >
+                  <option value="" disabled>
+                    Choose an option
+                  </option>
+                  <option value="option1">AMITY UNIVERSITY</option>
+                  <option value="option2">MANIPAL UNIVERSITY</option>
+                  <option value="option3">DPU UNIVERSITY</option>
+                  <option value="option4">SIKKIM MANIPAL UNIVERSITY </option>
+                  <option value="option5">VGU UNIVERSITY</option>
+                  <option value="option6">LPU UNIVERSITY</option>
+                  <option value="option7">SHOOLINI UNIVERSITY</option>
+                  <option value="option8">AIN UNIVERSITY</option>
+                  <option value="option9">LM UNIVERSITY</option>
+                  <option value="option10">UTTARANCHAL UNIVERSITY</option>
+                </select>
               </div>
             </div>
             <button
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300"
             >
-              View Expected Returns
+              Submit
             </button>
           </form>
         </div>
