@@ -77,7 +77,7 @@ const Contact = () => {
               <div className="mt-5">
                 {/* <h3 className="text-3xl font-bold mb-4 text-blue-700">NMIMS</h3> */}
                 <p className="mb-4 ml-10 dm:ml-0 text-lg leading-relaxed">
-                  College Shuru was established in the year of 2012 and is the
+                  Diztoversity was established in the year of 2012 and is the
                   perfect platform for students as it helps them to find the
                   courses they are looking for.
                 </p>
